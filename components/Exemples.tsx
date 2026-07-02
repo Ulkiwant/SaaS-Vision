@@ -1,4 +1,8 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
+import chantier from "@/public/photos/chantier.jpg";
+import formation from "@/public/photos/formation.jpg";
+import entrepot from "@/public/photos/entrepot.jpg";
 
 /* Situations types — présentées comme des exemples représentatifs, pas comme
    des références clients. Ne pas transformer en fausses études de cas. */
@@ -9,7 +13,8 @@ const exemples = [
       "Les devis sur Excel, le suivi des chantiers sur papier, les photos perdues dans les téléphones de chacun.",
     apres:
       "Un outil unique : devis et factures en deux clics, chaque chantier suivi avec ses photos, ses heures et sa marge.",
-    ui: ["w-24 bg-leaf/60", "w-16 bg-pine/25", "w-20 bg-pine/25"],
+    photo: chantier,
+    alt: "Ouvriers sur un chantier de construction",
   },
   {
     secteur: "Organisme de formation · 5 formateurs",
@@ -17,7 +22,8 @@ const exemples = [
       "Les sessions dans un agenda, les émargements dans des classeurs, la panique avant chaque audit Qualiopi.",
     apres:
       "Sessions, émargements et indicateurs qualité au même endroit — le dossier d'audit se prépare tout seul.",
-    ui: ["w-20 bg-pine/25", "w-24 bg-leaf/60", "w-14 bg-pine/25"],
+    photo: formation,
+    alt: "Salle de formation avec un formateur et des participants",
   },
   {
     secteur: "Négoce & distribution · 12 personnes",
@@ -25,7 +31,8 @@ const exemples = [
       "Le stock sur un tableur remis à jour le soir, les commandes prises par téléphone et ressaisies à la main.",
     apres:
       "Un portail où les clients commandent eux-mêmes, un stock juste en temps réel, zéro ressaisie.",
-    ui: ["w-16 bg-pine/25", "w-20 bg-pine/25", "w-24 bg-leaf/60"],
+    photo: entrepot,
+    alt: "Allée d'un entrepôt de stockage avec des rayonnages",
   },
 ];
 
@@ -53,15 +60,15 @@ export default function Exemples() {
               delay={i * 90}
               className="flex flex-col overflow-hidden rounded-[20px] border border-line bg-paper shadow-soft"
             >
-              {/* Mini interface décorative */}
-              <div aria-hidden className="flex flex-col gap-2 border-b border-line bg-pine-light px-6 py-5">
-                <div className="flex items-center gap-2">
-                  <span className="h-6 w-6 rounded-lg bg-pine" />
-                  <span className="h-2.5 w-20 rounded-full bg-ink/20" />
-                </div>
-                {e.ui.map((cls, j) => (
-                  <span key={j} className={`h-2.5 rounded-full ${cls}`} />
-                ))}
+              <div className="relative h-44 overflow-hidden border-b border-line">
+                <Image
+                  src={e.photo}
+                  alt={e.alt}
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover"
+                  placeholder="blur"
+                />
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-[13px] font-bold uppercase tracking-wider text-leaf">

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
+import equipe from "@/public/photos/equipe.jpg";
 
 const points = [
   {
@@ -21,7 +23,7 @@ const points = [
 
 export default function Pourquoi() {
   return (
-    <section className="bg-pine py-20 md:py-28">
+    <section id="pourquoi" className="bg-pine py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
@@ -36,18 +38,30 @@ export default function Pourquoi() {
           </p>
         </Reveal>
 
-        <ul className="mt-12 grid gap-x-10 gap-y-9 sm:grid-cols-2">
-          {points.map((p, i) => (
-            <Reveal key={p.title} as="li" delay={i * 70}>
-              <h3 className="font-display font-semibold text-[21px] leading-snug text-white">
-                {p.title}
-              </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-mint/70">
-                {p.text}
-              </p>
-            </Reveal>
-          ))}
-        </ul>
+        <div className="mt-12 grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+          <ul className="grid gap-x-10 gap-y-9 sm:grid-cols-2">
+            {points.map((p, i) => (
+              <Reveal key={p.title} as="li" delay={i * 70}>
+                <h3 className="font-display font-semibold text-[21px] leading-snug text-white">
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-mint/70">
+                  {p.text}
+                </p>
+              </Reveal>
+            ))}
+          </ul>
+          <Reveal from="right" className="relative h-72 overflow-hidden rounded-[22px] border border-mint/20 lg:h-full lg:min-h-[340px]">
+            <Image
+              src={equipe}
+              alt="Une équipe au travail autour d'une table avec ses ordinateurs"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+              placeholder="blur"
+            />
+          </Reveal>
+        </div>
       </div>
     </section>
   );
