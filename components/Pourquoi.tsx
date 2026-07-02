@@ -25,7 +25,7 @@ export default function Pourquoi() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
-            Pourquoi travailler avec moi
+            Pourquoi SaaS Vision
           </p>
           <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-mint md:text-[52px]">
             Le bon outil change tout.

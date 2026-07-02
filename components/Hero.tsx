@@ -13,8 +13,8 @@ export default function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-ink md:text-[72px]">
-              Je crée le logiciel dont votre entreprise a besoin.
-              Celui-là, pas un autre.
+              Le bon outil pour votre entreprise, conçu par quelqu&apos;un qui
+              prend le temps de vous comprendre.
             </h1>
           </Reveal>
 

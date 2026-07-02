@@ -25,7 +25,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
-            Ce que je construis
+            Services
           </p>
           <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
             Un outil pour chaque besoin, un seul interlocuteur.
