@@ -17,8 +17,8 @@ body {
 }
 
 ::selection {
-  background: #dff2e6;
-  color: #0e3e2e;
+  background: #e9e6d8;
+  color: #24372b;
 }
 
 /* ---------- Scroll reveal ---------- */
@@ -54,9 +54,9 @@ body {
 
 /* ---------- Pulsing badge dot ---------- */
 @keyframes pulse-dot {
-  0% { box-shadow: 0 0 0 0 rgba(24, 160, 94, 0.45); }
-  70% { box-shadow: 0 0 0 8px rgba(24, 160, 94, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(24, 160, 94, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(194, 103, 62, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(194, 103, 62, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(194, 103, 62, 0); }
 }
 .pulse-dot {
   animation: pulse-dot 2.2s ease-out infinite;
@@ -64,7 +64,7 @@ body {
 
 /* ---------- Marquee-free, subtle underline accent ---------- */
 .accent-underline {
-  background-image: linear-gradient(transparent 78%, #dff2e6 78%);
+  background-image: linear-gradient(transparent 78%, #e9e6d8 78%);
 }
 
 /* ---------- Reduced motion ---------- */

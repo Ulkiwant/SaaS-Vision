@@ -8,18 +8,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#FAFAF7",
-        ink: "#10231B",
-        body: "#4C5B54",
-        muted: "#8A968F",
-        line: "#E6EAE5",
+        // Fond sauge/crème
+        paper: "#F2F0E8",
+        // Vert forêt (titres, boutons sombres, sections dark)
+        ink: "#283A2E",
+        // Corps de texte
+        body: "#5A6355",
+        muted: "#8E937F",
+        line: "#DEDACA",
         pine: {
-          DEFAULT: "#0E3E2E",
-          dark: "#0A2C21",
-          light: "#EDF3EE",
+          DEFAULT: "#24372B",
+          dark: "#1C2C22",
+          light: "#EAE7D9",
         },
-        leaf: "#18A05E",
-        mint: "#DFF2E6",
+        // Accent terracotta
+        leaf: "#C2673E",
+        // Sable chaud (cartes, badges)
+        mint: "#E9E6D8",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -29,8 +34,8 @@ const config: Config = {
         xl2: "1.25rem",
       },
       boxShadow: {
-        soft: "0 2px 20px rgba(16,35,27,0.06)",
-        lift: "0 18px 44px rgba(16,35,27,0.12)",
+        soft: "0 2px 20px rgba(40,58,46,0.07)",
+        lift: "0 18px 44px rgba(40,58,46,0.14)",
       },
     },
   },

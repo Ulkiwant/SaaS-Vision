@@ -20,17 +20,15 @@ const steps = [
 
 export default function Approche() {
   return (
-    <section id="approche" className="border-y border-line bg-white py-20 md:py-28">
+    <section id="approche" className="border-y border-line bg-mint/50 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <Reveal className="max-w-2xl">
-          <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-leaf">
+        <Reveal className="max-w-3xl">
+          <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Approche
           </p>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink md:text-[42px] md:leading-[1.1]">
+          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
             Simple pour vous,{" "}
-            <em className="font-serif font-normal italic text-pine">
-              rigoureux pour nous
-            </em>
+            <em className="italic text-leaf">rigoureux</em> de mon côté.
           </h2>
         </Reveal>
 
@@ -42,13 +40,11 @@ export default function Approche() {
               delay={i * 90}
               className="relative rounded-[20px] border border-line bg-paper p-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift"
             >
-              <span className="font-serif text-5xl italic text-mint md:text-6xl" aria-hidden>
+              <span className="font-serif text-5xl italic text-leaf/30 md:text-6xl" aria-hidden>
                 {s.num}
               </span>
-              <h3 className="mt-4 text-xl font-bold tracking-tight text-ink">
-                {s.title}
-              </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-body">{s.text}</p>
+              <h3 className="mt-4 font-serif text-2xl text-ink">{s.title}</h3>
+              <p className="mt-2.5 text-[15px] leading-relaxed text-body">{s.text}</p>
             </Reveal>
           ))}
         </ol>

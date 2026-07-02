@@ -54,26 +54,23 @@ export default function Contact() {
   }
 
   const inputClass = (field: string) =>
-    `w-full rounded-xl border bg-white px-4 py-3.5 text-[15px] text-ink outline-none transition-all duration-200 placeholder:text-muted focus:border-pine focus:ring-2 focus:ring-mint ${
+    `w-full rounded-xl border bg-paper px-4 py-3.5 text-[15px] text-ink outline-none transition-all duration-200 placeholder:text-muted focus:border-leaf focus:ring-2 focus:ring-leaf/20 ${
       errors[field] ? "border-red-400" : "border-line"
     }`;
 
   return (
-    <section id="contact" className="border-t border-line bg-white py-20 md:py-28">
+    <section id="contact" className="border-t border-line py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
           <Reveal>
-            <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-leaf">
+            <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
               Contact
             </p>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink md:text-[42px] md:leading-[1.1]">
-              Parlons de{" "}
-              <em className="font-serif font-normal italic text-pine">
-                votre projet
-              </em>
+            <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+              Parlons de <em className="italic text-leaf">votre projet</em>.
             </h2>
             <p className="mt-5 max-w-md text-[16px] leading-relaxed text-body">
-              Décrivez-nous votre besoin en quelques lignes. On revient vers
+              Décrivez-moi votre besoin en quelques lignes. Je reviens vers
               vous rapidement avec une première proposition, sans engagement.
             </p>
             <div className="mt-8 flex flex-col gap-3 text-[15px]">
@@ -94,7 +91,7 @@ export default function Contact() {
             <form
               onSubmit={handleSubmit}
               noValidate
-              className="rounded-[24px] border border-line bg-paper p-6 shadow-soft md:p-8"
+              className="rounded-[24px] bg-pine-light p-6 shadow-soft md:p-8"
             >
               {/* Honeypot (invisible pour les humains) */}
               <input
@@ -174,15 +171,15 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-6 w-full rounded-full bg-ink px-7 py-4 text-[16px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-pine hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-60"
+                className="mt-6 w-full rounded-full bg-leaf px-7 py-4 text-[16px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-ink hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === "sending" ? "Envoi en cours…" : "Envoyer ma demande →"}
               </button>
 
               <div aria-live="polite">
                 {status === "success" && (
-                  <p className="mt-4 rounded-xl bg-mint px-4 py-3 text-center text-[14px] font-semibold text-pine">
-                    Merci ! Votre demande a bien été envoyée. On revient vers vous sous 24–48 h.
+                  <p className="mt-4 rounded-xl bg-pine px-4 py-3 text-center text-[14px] font-semibold text-mint">
+                    Merci ! Votre demande a bien été envoyée. Je reviens vers vous sous 24–48 h.
                   </p>
                 )}
                 {status === "error" && (

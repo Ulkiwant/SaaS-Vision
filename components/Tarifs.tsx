@@ -26,20 +26,19 @@ const offers = [
 
 export default function Tarifs() {
   return (
-    <section id="tarifs" className="border-y border-line bg-white py-20 md:py-28">
+    <section id="tarifs" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-leaf">
+        <Reveal className="max-w-3xl">
+          <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Tarifs
           </p>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink md:text-[42px] md:leading-[1.1]">
-            Une offre{" "}
-            <em className="font-serif font-normal italic text-pine">claire</em>,
-            sans surprise
+          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+            Une offre <em className="italic text-leaf">claire</em>, sans
+            surprise.
           </h2>
-          <p className="mt-4 text-[16px] text-body">
+          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-body">
             Création une fois, abonnement ensuite. Vous savez toujours où vous
-            en êtes.
+            en êtes — et pourquoi.
           </p>
         </Reveal>
 
@@ -50,24 +49,24 @@ export default function Tarifs() {
               delay={i * 90}
               className={`relative flex flex-col rounded-[22px] p-8 transition-all duration-300 hover:-translate-y-1.5 ${
                 o.popular
-                  ? "bg-pine text-white shadow-lift hover:shadow-lift"
-                  : "border border-line bg-paper shadow-soft hover:shadow-lift"
+                  ? "bg-pine text-white shadow-lift"
+                  : "bg-pine-light shadow-soft hover:shadow-lift"
               }`}
             >
               {o.popular && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-leaf px-4 py-1.5 text-[12px] font-bold uppercase tracking-wider text-white">
+                <span className="absolute -top-3.5 left-8 rounded-full bg-leaf px-4 py-1.5 text-[12px] font-bold uppercase tracking-wider text-white">
                   Le plus choisi
                 </span>
               )}
               <h3
-                className={`text-[15px] font-bold uppercase tracking-[0.15em] ${
-                  o.popular ? "text-mint" : "text-muted"
+                className={`font-serif text-[28px] ${
+                  o.popular ? "text-white" : "text-ink"
                 }`}
               >
                 {o.name}
               </h3>
               <p
-                className={`mt-5 text-[34px] font-extrabold leading-none tracking-tight ${
+                className={`mt-5 text-[32px] font-extrabold leading-none tracking-tight ${
                   o.popular ? "text-white" : "text-ink"
                 }`}
               >
@@ -75,7 +74,7 @@ export default function Tarifs() {
               </p>
               <p
                 className={`mt-1.5 text-[14px] font-medium ${
-                  o.popular ? "text-mint/90" : "text-muted"
+                  o.popular ? "text-mint/70" : "text-muted"
                 }`}
               >
                 création · puis dès {o.run}/mois
@@ -88,12 +87,7 @@ export default function Tarifs() {
                       o.popular ? "text-white/90" : "text-body"
                     }`}
                   >
-                    <span
-                      aria-hidden
-                      className={`mt-0.5 text-[13px] font-bold ${
-                        o.popular ? "text-leaf" : "text-leaf"
-                      }`}
-                    >
+                    <span aria-hidden className="mt-0.5 text-[13px] font-bold text-leaf">
                       ✓
                     </span>
                     {f}
@@ -104,8 +98,8 @@ export default function Tarifs() {
                 href="#contact"
                 className={`mt-8 rounded-full px-6 py-3 text-center text-[15px] font-semibold transition-all duration-200 hover:-translate-y-0.5 ${
                   o.popular
-                    ? "bg-white text-pine hover:bg-mint"
-                    : "border border-line bg-white text-ink hover:border-pine/30 hover:shadow-soft"
+                    ? "bg-leaf text-white hover:bg-white hover:text-pine"
+                    : "border border-ink/20 text-ink hover:border-ink/40 hover:shadow-soft"
                 }`}
               >
                 Demander un devis

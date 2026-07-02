@@ -33,7 +33,7 @@ export default function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-line/80 bg-paper/80 backdrop-blur-xl"
+          ? "border-b border-line/80 bg-paper/85 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
@@ -60,9 +60,9 @@ export default function Nav() {
 
         <a
           href="#contact"
-          className="hidden rounded-full bg-ink px-5 py-2.5 text-[15px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-pine hover:shadow-lift md:inline-block"
+          className="hidden rounded-full bg-leaf px-5 py-2.5 text-[15px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-ink hover:shadow-lift md:inline-block"
         >
-          Demander un devis
+          Parler de votre projet
         </a>
 
         {/* Burger */}
@@ -109,7 +109,7 @@ export default function Nav() {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block border-b border-line py-4 text-2xl font-bold tracking-tight text-ink"
+                className="block border-b border-line py-4 font-serif text-3xl text-ink"
               >
                 {l.label}
               </a>
@@ -119,9 +119,9 @@ export default function Nav() {
         <a
           href="#contact"
           onClick={() => setOpen(false)}
-          className="mt-8 rounded-full bg-ink px-6 py-4 text-center text-lg font-semibold text-white"
+          className="mt-8 rounded-full bg-leaf px-6 py-4 text-center text-lg font-semibold text-white"
         >
-          Demander un devis
+          Parler de votre projet
         </a>
       </div>
     </header>
