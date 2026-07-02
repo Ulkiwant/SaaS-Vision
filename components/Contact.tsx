@@ -66,7 +66,7 @@ export default function Contact() {
             <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
               Contact
             </p>
-            <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+            <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
               Parlons de votre projet.
             </h2>
             <p className="mt-5 max-w-md text-[16px] leading-relaxed text-body">

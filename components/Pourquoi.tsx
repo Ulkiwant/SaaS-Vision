@@ -27,7 +27,7 @@ export default function Pourquoi() {
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Pourquoi travailler avec moi
           </p>
-          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-mint md:text-[52px]">
+          <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-mint md:text-[52px]">
             Le bon outil change tout.
           </h2>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-mint/70">
@@ -39,7 +39,7 @@ export default function Pourquoi() {
         <ul className="mt-12 grid gap-x-10 gap-y-9 sm:grid-cols-2">
           {points.map((p, i) => (
             <Reveal key={p.title} as="li" delay={i * 70}>
-              <h3 className="font-serif text-[21px] leading-snug text-white">
+              <h3 className="font-display font-semibold text-[21px] leading-snug text-white">
                 {p.title}
               </h3>
               <p className="mt-2 text-[15px] leading-relaxed text-mint/70">

@@ -27,7 +27,7 @@ export default function Services() {
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Ce que je construis
           </p>
-          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+          <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
             Un outil pour chaque besoin, un seul interlocuteur.
           </h2>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-body">
@@ -43,7 +43,7 @@ export default function Services() {
               delay={i * 70}
               className="rounded-[20px] bg-pine-light p-7"
             >
-              <h3 className="font-serif text-[24px] leading-snug text-ink">
+              <h3 className="font-display font-semibold text-[24px] leading-snug text-ink">
                 {s.title}
               </h3>
               <p className="mt-3 text-[15px] leading-relaxed text-body">

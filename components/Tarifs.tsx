@@ -32,7 +32,7 @@ export default function Tarifs() {
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Tarifs
           </p>
-          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+          <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
             Une offre claire, sans surprise.
           </h2>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-body">
@@ -54,7 +54,7 @@ export default function Tarifs() {
               }`}
             >
               <h3
-                className={`font-serif text-[28px] ${
+                className={`font-display font-semibold text-[28px] ${
                   o.popular ? "text-white" : "text-ink"
                 }`}
               >

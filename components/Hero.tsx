@@ -7,14 +7,14 @@ export default function Hero() {
         <div className="max-w-4xl">
           <Reveal>
             <p className="text-[15px] font-medium text-muted">
-              Quentin — développeur indépendant, dans la Loire
+              Studio indépendant, dans la Loire
             </p>
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="mt-6 font-serif text-[44px] leading-[1.08] tracking-[-0.01em] text-ink md:text-[72px]">
-              Je crée le logiciel dont votre entreprise a besoin.{" "}
-              <em className="italic">Celui-là, pas un autre.</em>
+            <h1 className="mt-6 font-display font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-ink md:text-[72px]">
+              Je crée le logiciel dont votre entreprise a besoin.
+              Celui-là, pas un autre.
             </h1>
           </Reveal>
 

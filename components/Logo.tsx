@@ -3,7 +3,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
     <span className="inline-flex items-center gap-2.5">
       <span
         aria-hidden
-        className={`relative flex h-9 w-9 items-center justify-center rounded-xl text-lg font-serif italic ${
+        className={`relative flex h-9 w-9 items-center justify-center rounded-xl text-lg font-display font-bold ${
           light ? "bg-mint text-pine" : "bg-pine text-mint"
         }`}
       >

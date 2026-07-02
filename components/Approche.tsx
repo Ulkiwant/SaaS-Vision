@@ -26,7 +26,7 @@ export default function Approche() {
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
             Comment ça se passe
           </p>
-          <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
+          <h2 className="mt-4 font-display font-semibold text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
             Simple pour vous, rigoureux de mon côté.
           </h2>
         </Reveal>
@@ -39,10 +39,10 @@ export default function Approche() {
               delay={i * 90}
               className="rounded-[20px] border border-line bg-paper p-8"
             >
-              <span className="font-serif text-4xl italic text-leaf/50" aria-hidden>
+              <span className="font-display font-semibold text-4xl text-leaf/50" aria-hidden>
                 {s.num}.
               </span>
-              <h3 className="mt-4 font-serif text-2xl text-ink">{s.title}</h3>
+              <h3 className="mt-4 font-display font-semibold text-2xl text-ink">{s.title}</h3>
               <p className="mt-2.5 text-[15px] leading-relaxed text-body">{s.text}</p>
             </Reveal>
           ))}

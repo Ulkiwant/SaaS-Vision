@@ -10,12 +10,10 @@ const inter = localFont({
   display: "swap",
 });
 
-const serif = localFont({
-  src: [
-    { path: "./fonts/instrument-serif-latin-400-normal.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/instrument-serif-latin-400-italic.woff2", weight: "400", style: "italic" },
-  ],
-  variable: "--font-serif",
+const display = localFont({
+  src: "./fonts/bricolage-grotesque-latin-wght-normal.woff2",
+  weight: "200 800",
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -71,7 +69,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${serif.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${display.variable}`}>
       <body className="font-sans">
         <script
           type="application/ld+json"

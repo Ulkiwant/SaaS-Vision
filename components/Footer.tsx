@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-body">
-              Des logiciels sur mesure pour les TPE et PME, conçus et
-              maintenus par une seule personne : moi.
+              Des logiciels sur mesure pour les TPE et PME, conçus, hébergés
+              et maintenus par un studio indépendant à taille humaine.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 border-t border-line pt-6 text-center text-[13px] text-muted">
-          © 2026 SaaS Vision — Quentin, développeur indépendant dans la Loire.
+          © 2026 SaaS Vision — studio indépendant, dans la Loire.
         </p>
       </div>
     </footer>
