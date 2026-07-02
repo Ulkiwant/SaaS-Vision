@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  @apply bg-paper text-body antialiased;
+  font-feature-settings: "ss01" on, "cv11" on;
+}
+
+::selection {
+  background: #dff2e6;
+  color: #0e3e2e;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Hero orbs ---------- */
+@keyframes float-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.08); }
+}
+@keyframes float-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, 24px) scale(0.94); }
+}
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.orb-a { animation: float-a 14s ease-in-out infinite; }
+.orb-b { animation: float-b 18s ease-in-out infinite; }
+
+/* ---------- Pulsing badge dot ---------- */
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(24, 160, 94, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(24, 160, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(24, 160, 94, 0); }
+}
+.pulse-dot {
+  animation: pulse-dot 2.2s ease-out infinite;
+}
+
+/* ---------- Marquee-free, subtle underline accent ---------- */
+.accent-underline {
+  background-image: linear-gradient(transparent 78%, #dff2e6 78%);
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .orb-a, .orb-b, .pulse-dot {
+    animation: none !important;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
