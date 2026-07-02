@@ -17,6 +17,14 @@ const display = localFont({
   display: "swap",
 });
 
+// Serif réservé au logo (wordmark SaaS Vision)
+const logo = localFont({
+  src: "./fonts/lora-latin-wght-normal.woff2",
+  weight: "400 700",
+  variable: "--font-logo",
+  display: "swap",
+});
+
 const SITE_URL = "https://saasvision.fr";
 
 export const metadata: Metadata = {
@@ -69,7 +77,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${display.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${display.variable} ${logo.variable}`}>
       <body className="font-sans">
         <script
           type="application/ld+json"

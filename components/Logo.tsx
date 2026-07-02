@@ -1,22 +1,21 @@
 export default function Logo({ light = false }: { light?: boolean }) {
   return (
-    <span className="inline-flex items-center gap-2.5">
+    <span className="inline-flex flex-col" aria-label="SaaS Vision">
       <span
-        aria-hidden
-        className={`relative flex h-9 w-9 items-center justify-center rounded-xl text-lg font-display font-bold ${
-          light ? "bg-mint text-pine" : "bg-pine text-mint"
+        className={`font-logo text-[16px] leading-[1.05] tracking-wide ${
+          light ? "text-mint/70" : "text-muted"
         }`}
       >
-        S
-        <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-leaf" />
+        SaaS
       </span>
       <span
-        className={`text-[17px] font-extrabold tracking-tight ${
+        className={`font-logo text-[21px] font-bold leading-[1.1] ${
           light ? "text-white" : "text-ink"
         }`}
       >
-        SaaS&nbsp;Vision
+        Vision
       </span>
+      <span aria-hidden className="mt-[5px] h-[3.5px] w-12 rounded-full bg-leaf" />
     </span>
   );
 }
