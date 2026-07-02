@@ -7,7 +7,9 @@ Ce n'est **pas** un projet client : c'est le site marketing du studio lui-même.
 
 - Créé initialement avec Claude Cowork, repris en local avec Claude Code (juillet 2026).
 - Dépôt GitHub : `Ulkiwant/saas-vision` — connecté à Vercel : **tout push sur `main` déclenche un déploiement automatique en production**.
-- Site one-page en français : Hero, Services, Pourquoi, Approche, Tarifs, À propos, Contact + pages légales (mentions-legales, confidentialite).
+- Site one-page en français : Hero (avec mockup produit CSS), Marquee, Stats (compteurs animés), Services, Exemples, Approche, Pourquoi, Comparatif, Tarifs, Honnête, FAQ, À propos, Contact + pages légales (mentions-legales, confidentialite).
+- Pas de faux témoignages ni de faux logos clients : la section Exemples présente des situations types, jamais des références inventées.
+- Ne jamais lancer `npm run build` pendant que le dev server tourne (les deux écrivent dans `.next` et le corrompent).
 
 ## Stack
 

@@ -29,9 +29,39 @@ body {
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
+.reveal.from-left {
+  transform: translateX(-36px);
+}
+.reveal.from-right {
+  transform: translateX(36px);
+}
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+}
+
+/* ---------- Marquee (bandeau défilant) ---------- */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+
+/* ---------- Flottement doux (mockup hero) ---------- */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.float-soft {
+  animation: float-soft 6s ease-in-out infinite;
 }
 
 /* ---------- Marquee-free, subtle underline accent ---------- */
@@ -46,6 +76,9 @@ body {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+  .marquee-track, .float-soft {
+    animation: none !important;
   }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;

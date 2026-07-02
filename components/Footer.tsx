@@ -20,8 +20,10 @@ export default function Footer() {
             </p>
             <ul className="mt-4 flex flex-col gap-2.5 text-[14px]">
               <li><a href="#services" className="text-body transition-colors hover:text-ink">Services</a></li>
+              <li><a href="#exemples" className="text-body transition-colors hover:text-ink">Exemples</a></li>
               <li><a href="#approche" className="text-body transition-colors hover:text-ink">Approche</a></li>
               <li><a href="#tarifs" className="text-body transition-colors hover:text-ink">Tarifs</a></li>
+              <li><a href="#faq" className="text-body transition-colors hover:text-ink">FAQ</a></li>
               <li><a href="#a-propos" className="text-body transition-colors hover:text-ink">À propos</a></li>
             </ul>
           </nav>

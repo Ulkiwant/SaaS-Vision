@@ -6,9 +6,10 @@ import Logo from "./Logo";
 
 const links = [
   { href: "#services", label: "Services" },
+  { href: "#exemples", label: "Exemples" },
   { href: "#approche", label: "Approche" },
   { href: "#tarifs", label: "Tarifs" },
-  { href: "#a-propos", label: "À propos" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 export default function Nav() {

@@ -6,6 +6,7 @@ type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
+  from?: "up" | "left" | "right";
   as?: "div" | "section" | "article" | "li";
 };
 
@@ -13,6 +14,7 @@ export default function Reveal({
   children,
   className = "",
   delay = 0,
+  from = "up",
   as: Tag = "div",
 }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
@@ -35,10 +37,12 @@ export default function Reveal({
     return () => observer.disconnect();
   }, []);
 
+  const fromClass = from === "left" ? "from-left" : from === "right" ? "from-right" : "";
+
   return (
     <Tag
       ref={ref as never}
-      className={`reveal ${className}`}
+      className={`reveal ${fromClass} ${className}`}
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
