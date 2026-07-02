@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "SaaS Vision — Logiciels sur mesure pour TPE & PME",
   description:
-    "SaaS Vision conçoit, héberge et fait évoluer les logiciels dont votre entreprise a vraiment besoin : CRM, ERP, outils métier. Sur mesure, sans la complexité ni le prix d'une agence.",
+    "Je conçois, héberge et fais évoluer les logiciels dont votre entreprise a vraiment besoin : CRM, ERP, outils métier. Un développeur indépendant qui prend le temps de vous comprendre.",
   keywords: [
     "logiciel sur mesure",
     "CRM sur mesure",

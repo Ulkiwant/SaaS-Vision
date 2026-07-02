@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-body">
-              La puissance d&apos;un logiciel sur mesure, sans la complexité ni
-              le prix d&apos;une agence.
+              Des logiciels sur mesure pour les TPE et PME, conçus et
+              maintenus par une seule personne : moi.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
                   contact@saasvision.fr
                 </a>
               </li>
-              <li className="text-body">Réponse sous 24–48 h</li>
+              <li className="text-body">Je réponds sous 24 à 48 h</li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 border-t border-line pt-6 text-center text-[13px] text-muted">
-          © 2026 SaaS Vision — Tous droits réservés.
+          © 2026 SaaS Vision — Quentin, développeur indépendant dans la Loire.
         </p>
       </div>
     </footer>

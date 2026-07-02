@@ -7,11 +7,11 @@ const points = [
   },
   {
     title: "Sur mesure, jamais générique",
-    text: "Votre outil épouse votre métier. On ne vous fait pas rentrer dans une case toute faite.",
+    text: "Votre outil épouse votre métier. Je ne vous fais pas rentrer dans une case toute faite.",
   },
   {
     title: "Moins cher qu'une agence",
-    text: "La qualité d'une agence, sans la structure ni les tarifs qui vont avec.",
+    text: "Pas de locaux, pas de commerciaux, pas d'intermédiaires : vous payez le travail, pas la structure.",
   },
   {
     title: "Le code est à vous",
@@ -25,10 +25,10 @@ export default function Pourquoi() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-leaf">
-            Pourquoi SaaS Vision
+            Pourquoi travailler avec moi
           </p>
           <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-mint md:text-[52px]">
-            Le bon outil change <em className="italic text-leaf">tout</em>.
+            Le bon outil change tout.
           </h2>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-mint/70">
             Les outils génériques vous imposent leur logique. Je construis
@@ -36,23 +36,15 @@ export default function Pourquoi() {
           </p>
         </Reveal>
 
-        <ul className="mt-12 grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-12 grid gap-x-10 gap-y-9 sm:grid-cols-2">
           {points.map((p, i) => (
-            <Reveal key={p.title} as="li" delay={i * 70} className="flex gap-4">
-              <span
-                aria-hidden
-                className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-leaf text-[13px] font-bold text-white"
-              >
-                ✓
-              </span>
-              <div>
-                <h3 className="font-serif text-[21px] leading-snug text-white">
-                  {p.title}
-                </h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-mint/70">
-                  {p.text}
-                </p>
-              </div>
+            <Reveal key={p.title} as="li" delay={i * 70}>
+              <h3 className="font-serif text-[21px] leading-snug text-white">
+                {p.title}
+              </h3>
+              <p className="mt-2 text-[15px] leading-relaxed text-mint/70">
+                {p.text}
+              </p>
             </Reveal>
           ))}
         </ul>

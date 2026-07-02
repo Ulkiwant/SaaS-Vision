@@ -62,7 +62,7 @@ export default function Nav() {
           href="#contact"
           className="hidden rounded-full bg-leaf px-5 py-2.5 text-[15px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-ink hover:shadow-lift md:inline-block"
         >
-          Parler de votre projet
+          M&apos;écrire
         </a>
 
         {/* Burger */}
@@ -121,7 +121,7 @@ export default function Nav() {
           onClick={() => setOpen(false)}
           className="mt-8 rounded-full bg-leaf px-6 py-4 text-center text-lg font-semibold text-white"
         >
-          Parler de votre projet
+          M&apos;écrire
         </a>
       </div>
     </header>

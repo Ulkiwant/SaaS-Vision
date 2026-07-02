@@ -4,7 +4,7 @@ const points = [
   "Vous parlez à la personne qui code",
   "Premiers écrans en quelques jours",
   "Le code vous appartient",
-  "Réponse sous 24–48 h",
+  "Je réponds sous 24 à 48 h",
 ];
 
 export default function Stats() {

@@ -33,12 +33,12 @@ export default function Tarifs() {
             Tarifs
           </p>
           <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
-            Une offre <em className="italic text-leaf">claire</em>, sans
-            surprise.
+            Une offre claire, sans surprise.
           </h2>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-body">
             Création une fois, abonnement ensuite. Vous savez toujours où vous
-            en êtes — et pourquoi.
+            en êtes — et pourquoi. Chaque devis est écrit par moi, pour votre
+            projet, pas généré depuis une grille.
           </p>
         </Reveal>
 
@@ -53,11 +53,6 @@ export default function Tarifs() {
                   : "bg-pine-light shadow-soft hover:shadow-lift"
               }`}
             >
-              {o.popular && (
-                <span className="absolute -top-3.5 left-8 rounded-full bg-leaf px-4 py-1.5 text-[12px] font-bold uppercase tracking-wider text-white">
-                  Le plus choisi
-                </span>
-              )}
               <h3
                 className={`font-serif text-[28px] ${
                   o.popular ? "text-white" : "text-ink"
@@ -102,7 +97,7 @@ export default function Tarifs() {
                     : "border border-ink/20 text-ink hover:border-ink/40 hover:shadow-soft"
                 }`}
               >
-                Demander un devis
+                On en parle&nbsp;?
               </a>
             </Reveal>
           ))}
@@ -110,8 +105,9 @@ export default function Tarifs() {
 
         <Reveal delay={150}>
           <p className="mt-8 text-center text-[14px] text-muted">
-            Tarifs indicatifs, ajustés à votre projet lors du devis. Des aides à
-            la digitalisation peuvent réduire votre coût.
+            Tarifs indicatifs, ajustés à votre projet lors du devis. Des aides
+            à la digitalisation existent selon votre région — je vous aide à
+            voir si vous y avez droit.
           </p>
         </Reveal>
       </div>

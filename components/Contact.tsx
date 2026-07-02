@@ -67,11 +67,13 @@ export default function Contact() {
               Contact
             </p>
             <h2 className="mt-4 font-serif text-4xl leading-[1.1] tracking-[-0.01em] text-ink md:text-[52px]">
-              Parlons de <em className="italic text-leaf">votre projet</em>.
+              Parlons de votre projet.
             </h2>
             <p className="mt-5 max-w-md text-[16px] leading-relaxed text-body">
-              Décrivez-moi votre besoin en quelques lignes. Je reviens vers
-              vous rapidement avec une première proposition, sans engagement.
+              Décrivez-moi votre besoin en quelques lignes, avec vos mots —
+              pas besoin de vocabulaire technique. C&apos;est moi qui lis
+              chaque message, et c&apos;est moi qui vous réponds. Sans
+              engagement, et sans relances commerciales derrière.
             </p>
             <div className="mt-8 flex flex-col gap-3 text-[15px]">
               <a
@@ -80,10 +82,7 @@ export default function Contact() {
               >
                 ✉ contact@saasvision.fr
               </a>
-              <span className="inline-flex items-center gap-2 text-body">
-                <span className="pulse-dot h-2 w-2 rounded-full bg-leaf" />
-                Réponse sous 24–48 h
-              </span>
+              <span className="text-body">Je réponds sous 24 à 48 h</span>
             </div>
           </Reveal>
 
@@ -112,7 +111,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="Jean Dupont"
+                    placeholder="Votre nom"
                     className={inputClass("name")}
                     aria-invalid={!!errors.name}
                   />
@@ -128,7 +127,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="jean@entreprise.fr"
+                    placeholder="vous@entreprise.fr"
                     className={inputClass("email")}
                     aria-invalid={!!errors.email}
                   />
@@ -173,18 +172,18 @@ export default function Contact() {
                 disabled={status === "sending"}
                 className="mt-6 w-full rounded-full bg-leaf px-7 py-4 text-[16px] font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-ink hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {status === "sending" ? "Envoi en cours…" : "Envoyer ma demande →"}
+                {status === "sending" ? "Envoi en cours…" : "Envoyer"}
               </button>
 
               <div aria-live="polite">
                 {status === "success" && (
                   <p className="mt-4 rounded-xl bg-pine px-4 py-3 text-center text-[14px] font-semibold text-mint">
-                    Merci ! Votre demande a bien été envoyée. Je reviens vers vous sous 24–48 h.
+                    Merci, c&apos;est bien reçu. Je vous réponds personnellement sous 24 à 48 h.
                   </p>
                 )}
                 {status === "error" && (
                   <p className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-center text-[14px] font-semibold text-red-600">
-                    Une erreur est survenue. Réessayez ou écrivez-nous à contact@saasvision.fr.
+                    Une erreur est survenue. Réessayez ou écrivez-moi directement à contact@saasvision.fr.
                   </p>
                 )}
               </div>

@@ -34,34 +34,6 @@ body {
   transform: translateY(0);
 }
 
-/* ---------- Hero orbs ---------- */
-@keyframes float-a {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(40px, -30px) scale(1.08); }
-}
-@keyframes float-b {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-50px, 24px) scale(0.94); }
-}
-.orb {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(90px);
-  pointer-events: none;
-}
-.orb-a { animation: float-a 14s ease-in-out infinite; }
-.orb-b { animation: float-b 18s ease-in-out infinite; }
-
-/* ---------- Pulsing badge dot ---------- */
-@keyframes pulse-dot {
-  0% { box-shadow: 0 0 0 0 rgba(194, 103, 62, 0.45); }
-  70% { box-shadow: 0 0 0 8px rgba(194, 103, 62, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(194, 103, 62, 0); }
-}
-.pulse-dot {
-  animation: pulse-dot 2.2s ease-out infinite;
-}
-
 /* ---------- Marquee-free, subtle underline accent ---------- */
 .accent-underline {
   background-image: linear-gradient(transparent 78%, #e9e6d8 78%);
@@ -74,9 +46,6 @@ body {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
-  }
-  .orb-a, .orb-b, .pulse-dot {
-    animation: none !important;
   }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
