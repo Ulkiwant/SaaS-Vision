@@ -1,0 +1,4 @@
+entreprise;secteur;ville;dirigeant;email;telephone;siteWeb;observation
+[EXEMPLE] Métallerie Durand;industrie;Saint-Étienne;Pierre Durand;p.durand@exemple.fr;04 77 00 00 01;https://metallerie-durand.exemple.fr;Vu votre page « devis » : tout passe encore par téléphone et e-mail
+[EXEMPLE] Cabinet Roche Conseil;services;Montbrison;Claire Roche;c.roche@exemple.fr;04 77 00 00 02;https://roche-conseil.exemple.fr;Votre équipe jongle entre trois outils d'après votre page équipe
+[EXEMPLE] Transports Bertrand;industrie;Roanne;Luc Bertrand;l.bertrand@exemple.fr;04 77 00 00 03;https://transports-bertrand.exemple.fr;Planning chauffeurs sur tableau blanc mentionné dans la presse locale
