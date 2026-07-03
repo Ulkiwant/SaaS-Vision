@@ -3,21 +3,21 @@ import Reveal from "./Reveal";
 const offers = [
   {
     name: "Simple",
-    build: "1 500 €",
+    build: "900 €",
     run: "49 €",
     popular: false,
     features: ["Connexion sécurisée", "Hébergement & sauvegardes", "Support e-mail"],
   },
   {
     name: "Standard",
-    build: "3 400 €",
+    build: "2 700 €",
     run: "99 €",
     popular: true,
     features: ["Comptes & rôles", "Maintenance & évolutions", "Support prioritaire"],
   },
   {
     name: "Avancé",
-    build: "6 500 €",
+    build: "6 000 €",
     run: "199 €",
     popular: false,
     features: ["Intégrations (paiement, API, IA)", "Rôles avancés", "Accompagnement dédié"],

@@ -12,7 +12,7 @@ const cas = [
       "Un outil fige des habitudes. Si elles ne sont pas stabilisées, mieux vaut attendre — et je peux vous aider à cadrer d'abord.",
   },
   {
-    titre: "Votre budget est en dessous de 1 500 €",
+    titre: "Votre budget est en dessous de 900 €",
     texte:
       "À ce niveau, un tableur bien construit est souvent la bonne étape. Revenez me voir quand l'activité aura grandi.",
   },
