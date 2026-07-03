@@ -24,10 +24,10 @@ Palette sauge/terracotta, typographie serif éditoriale (fonts locales dans `app
 
 ## Contenu à garder cohérent
 
-Les tarifs affichés dans `components/Tarifs.tsx` doivent rester alignés avec la grille du studio (voir CLAUDE.md global) :
-- Simple : build 1 500–3 000 € · run 49–99 €/mois
-- Standard : build 3 000–6 000 € · run 99–199 €/mois
-- Avancé : build 6 000–12 000 € · run 199–349 €/mois
+Les tarifs affichés dans `components/Tarifs.tsx` et `components/Faq.tsx` doivent rester alignés avec la grille du studio (voir CLAUDE.md global — prix construits sur un modèle de coûts : heures + crédits Claude + 30 % de cotisations/impôts) :
+- Simple : build 1 500–2 800 € · run 49–99 €/mois
+- Standard : build 3 400–6 000 € · run 99–199 €/mois
+- Avancé : build 6 500–12 000 € · run 199–449 €/mois
 
 ## Commandes
 

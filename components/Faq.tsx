@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const questions = [
   {
     q: "Combien ça coûte, concrètement ?",
-    a: "Une création facturée une seule fois (à partir de 1 500 € pour un outil simple, jusqu'à 12 000 € pour un projet avancé avec intégrations), puis un abonnement mensuel qui couvre l'hébergement, la maintenance et le support (de 49 à 349 €/mois selon l'outil). Le devis est fixé avant de commencer : pas de compteur qui tourne.",
+    a: "Une création facturée une seule fois (à partir de 1 500 € pour un outil simple, jusqu'à 12 000 € pour un projet avancé avec intégrations), puis un abonnement mensuel qui couvre l'hébergement, les éventuels coûts d'API, la maintenance et le support (de 49 à 449 €/mois selon l'outil et sa consommation). Le devis est fixé avant de commencer : pas de compteur qui tourne.",
   },
   {
     q: "Combien de temps avant d'avoir mon outil ?",

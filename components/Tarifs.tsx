@@ -6,21 +6,21 @@ const offers = [
     build: "1 500 €",
     run: "49 €",
     popular: false,
-    features: ["Connexion sécurisée", "Hébergement", "Support e-mail"],
+    features: ["Connexion sécurisée", "Hébergement & sauvegardes", "Support e-mail"],
   },
   {
     name: "Standard",
-    build: "3 000 €",
+    build: "3 400 €",
     run: "99 €",
     popular: true,
     features: ["Comptes & rôles", "Maintenance & évolutions", "Support prioritaire"],
   },
   {
     name: "Avancé",
-    build: "6 000 €",
+    build: "6 500 €",
     run: "199 €",
     popular: false,
-    features: ["Intégrations (paiement, API)", "Rôles avancés", "Accompagnement dédié"],
+    features: ["Intégrations (paiement, API, IA)", "Rôles avancés", "Accompagnement dédié"],
   },
 ];
 
