@@ -9,6 +9,7 @@ const items = [
   "Qualité & conformité",
   "Interventions terrain",
   "Tableaux de bord",
+  "Site vitrine",
 ];
 
 export default function Marquee() {

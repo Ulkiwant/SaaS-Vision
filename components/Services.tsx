@@ -58,6 +58,18 @@ const services = [
     text: "Tâches, planning, collaboration : votre équipe alignée et le quotidien fluidifié, sans usine à gaz.",
     inclus: ["Planning partagé", "Tâches & responsabilités claires", "Accessible sur téléphone"],
   },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" className={iconClass} {...stroke}>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
+      </svg>
+    ),
+    title: "Site vitrine & présence en ligne",
+    text: "Un site sobre, rapide et bien référencé pour présenter votre activité — comme celui que vous êtes en train de lire. Seul, ou en complément de votre outil.",
+    inclus: ["Design à l'image de votre entreprise", "Référencement local soigné", "Formulaire de contact & pages légales"],
+    large: true,
+  },
 ];
 
 export default function Services() {
@@ -82,7 +94,9 @@ export default function Services() {
             <Reveal
               key={s.title}
               delay={i * 70}
-              className="rounded-[20px] bg-pine-light p-7 md:p-8"
+              className={`rounded-[20px] bg-pine-light p-7 md:p-8 ${
+                "large" in s && s.large ? "sm:col-span-2" : ""
+              }`}
             >
               <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-paper text-leaf shadow-soft">
                 {s.icon}
