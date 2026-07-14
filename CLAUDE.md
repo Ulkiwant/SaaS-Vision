@@ -23,7 +23,7 @@ Ce n'est **pas** un projet client : c'est le site marketing du studio lui-même.
 Refonte du 14/07/2026, inspirée de revolut.com (validée avec l'utilisateur avant refonte complète — palette ET effets de scroll).
 
 - **Palette** : bleu électrique/indigo (`leaf` = #4654F5) comme accent principal, fond clair frais (`paper` = #F5F5FA), sections sombres en dégradé bleu nuit/indigo (`pine`/`bg-grad-dark`), pop chaud corail (`coral` = #FF6B4D) en contraste — hérité de l'ancien accent terracotta. Tous les composants utilisent les tokens Tailwind sémantiques (`paper`, `ink`, `body`, `muted`, `line`, `pine`, `leaf`, `mint`, `coral`) définis dans `tailwind.config.ts` : changer la DA passe par ces tokens, pas par des couleurs codées en dur dans les composants.
-- **Typo** : Bricolage Grotesque (`font-display`) en bold/tight-tracking pour les titres, y compris le logo (wordmark "SaaS Vision" + mark carré dégradé "SV", plus de serif éditorial Lora).
+- **Typo** : Bricolage Grotesque (`font-display`) en bold/tight-tracking pour les titres. Logo resté sur son design d'origine (empilé "SaaS" / "Vision" en serif Lora + barre d'accent), simplement recoloré avec les nouveaux tokens.
 - **Motion** : `framer-motion` installé pour les effets scroll-linked (parallax `useScroll`/`useTransform` sur le mockup du Hero, section Approche en scroll pinné/sticky avec `AnimatePresence`). `Reveal.tsx` (IntersectionObserver + CSS) reste la base pour les apparitions au scroll simples. Blobs de fond dégradés animés (`.blob`, classes `blob-a`/`blob-b` dans `globals.css`) pour le fond façon Revolut.
 - Respecter cette DA pour toute nouvelle section : bold, contrasté, motion soignée — plus l'ancien ton éditorial sauge/terracotta.
 
