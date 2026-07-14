@@ -23,6 +23,7 @@ export default function Footer() {
               <li><a href="#exemples" className="text-body transition-colors hover:text-ink">Exemples</a></li>
               <li><a href="#approche" className="text-body transition-colors hover:text-ink">Approche</a></li>
               <li><a href="#tarifs" className="text-body transition-colors hover:text-ink">Tarifs</a></li>
+              <li><a href="#parrainage" className="text-body transition-colors hover:text-ink">Parrainage</a></li>
               <li><a href="#faq" className="text-body transition-colors hover:text-ink">FAQ</a></li>
               <li><a href="#a-propos" className="text-body transition-colors hover:text-ink">À propos</a></li>
             </ul>

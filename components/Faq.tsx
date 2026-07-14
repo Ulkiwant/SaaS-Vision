@@ -37,6 +37,10 @@ const questions = [
     q: "Existe-t-il des aides pour financer ce type de projet ?",
     a: "Souvent, oui : les régions et certains organismes proposent des aides à la digitalisation des TPE/PME. J'en tiens compte dans le devis et je vous aide à vérifier ce à quoi vous avez droit.",
   },
+  {
+    q: "Comment fonctionne le parrainage ?",
+    a: "Si vous êtes déjà client et que vous me recommandez à une entreprise qui devient cliente à son tour, vous recevez un mois d'abonnement offert — sans limite du nombre de recommandations. L'entreprise que vous recommandez profite en plus de 10 % de remise sur la création de son outil.",
+  },
 ];
 
 export default function Faq() {
