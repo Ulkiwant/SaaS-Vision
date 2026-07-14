@@ -24,17 +24,18 @@ export default function MentionsLegales() {
           <section>
             <h2 className="text-lg font-bold text-ink">Éditeur du site</h2>
             <p className="mt-2">
-              SaaS Vision — [Forme juridique : micro-entreprise]<br />
-              [Nom et prénom de l&apos;exploitant]<br />
-              [Adresse du siège social]<br />
-              SIRET : [à compléter]<br />
+              SaaS Vision — Entreprise individuelle (micro-entreprise)<br />
+              Quentin Celette<br />
+              18 rue Jean Baptiste Dupré, 42530 Saint-Genest-Lerpt, France<br />
+              SIRET : 107 141 764 00012<br />
+              APE : 6201Z — Programmation informatique<br />
               E-mail : contact@saasvision.fr
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-bold text-ink">Directeur de la publication</h2>
-            <p className="mt-2">[Nom et prénom]</p>
+            <p className="mt-2">Quentin Celette</p>
           </section>
 
           <section>

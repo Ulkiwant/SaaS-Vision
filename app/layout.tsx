@@ -64,11 +64,21 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "SaaS Vision",
+  legalName: "Quentin Celette",
   url: SITE_URL,
   email: "contact@saasvision.fr",
   description:
     "Studio de logiciels sur mesure pour TPE et PME : CRM, ERP, outils métier et outils d'organisation.",
   areaServed: "Loire (42), France",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "18 rue Jean Baptiste Dupré",
+    postalCode: "42530",
+    addressLocality: "Saint-Genest-Lerpt",
+    addressCountry: "FR",
+  },
+  taxID: "107 141 764",
+  foundingDate: "2026-07-07",
   slogan:
     "La puissance d'un logiciel sur mesure, sans la complexité ni le prix d'une agence.",
 };

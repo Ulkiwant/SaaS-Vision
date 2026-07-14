@@ -75,7 +75,9 @@ export default function Confidentialite() {
           <section>
             <h2 className="text-lg font-bold text-ink">Responsable du traitement</h2>
             <p className="mt-2">
-              SaaS Vision — [Nom de l&apos;exploitant, adresse à compléter].
+              SaaS Vision — Quentin Celette, entreprise individuelle, 18 rue
+              Jean Baptiste Dupré, 42530 Saint-Genest-Lerpt, France (SIRET
+              107 141 764 00012).
             </p>
           </section>
         </div>
