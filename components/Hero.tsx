@@ -1,3 +1,7 @@
+"use client";
+
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Reveal from "./Reveal";
 
 /* Démo fictive d'un outil de gestion d'artisan, en pur HTML/CSS aux couleurs du site.
@@ -126,21 +130,42 @@ function HeroMockup() {
 }
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const mockupY = useTransform(scrollYProgress, [0, 1], [0, 90]);
+  const mockupRotate = useTransform(scrollYProgress, [0, 1], [0, -2]);
+  const blobY = useTransform(scrollYProgress, [0, 1], [0, -60]);
+
   return (
-    <section id="accueil" className="relative pt-36 pb-20 md:pt-44 md:pb-24">
+    <section
+      ref={sectionRef}
+      id="accueil"
+      className="relative overflow-hidden pt-36 pb-20 md:pt-48 md:pb-28"
+    >
+      <motion.div aria-hidden className="pointer-events-none absolute inset-0 -z-10" style={{ y: blobY }}>
+        <span className="blob blob-a -top-32 -left-24 h-[420px] w-[420px] bg-leaf/40" />
+        <span className="blob blob-b top-10 right-[-140px] h-[380px] w-[380px] bg-coral/30" />
+        <span className="blob blob-a top-[60%] left-[35%] h-[260px] w-[260px] bg-leaf/20" />
+      </motion.div>
+
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
           <div>
             <Reveal>
-              <p className="text-[15px] font-medium text-muted">
+              <p className="inline-flex items-center gap-2 rounded-full border border-line bg-paper/80 px-4 py-1.5 text-[14px] font-medium text-muted shadow-soft backdrop-blur">
+                <span className="h-1.5 w-1.5 rounded-full bg-leaf" />
                 Studio indépendant, dans la Loire
               </p>
             </Reveal>
 
             <Reveal delay={80}>
-              <h1 className="mt-6 font-display font-semibold text-[40px] leading-[1.08] tracking-[-0.01em] text-ink md:text-[58px]">
-                Le bon outil pour votre entreprise, conçu par quelqu&apos;un qui
-                prend le temps de vous comprendre.
+              <h1 className="mt-7 font-display font-semibold text-[40px] leading-[1.05] tracking-[-0.025em] text-ink md:text-[52px] lg:text-[58px]">
+                Le bon outil{" "}
+                <span className="text-gradient">pour votre entreprise</span>,
+                conçu par quelqu&apos;un qui prend le temps de vous comprendre.
               </h1>
             </Reveal>
 
@@ -157,13 +182,13 @@ export default function Hero() {
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#contact"
-                  className="w-full rounded-full bg-leaf px-7 py-3.5 text-center text-[16px] font-semibold text-white shadow-soft transition-colors duration-200 hover:bg-ink sm:w-auto"
+                  className="w-full rounded-full bg-grad-primary px-7 py-3.5 text-center text-[16px] font-semibold text-white shadow-glow transition-transform duration-200 hover:-translate-y-0.5 sm:w-auto"
                 >
                   M&apos;écrire
                 </a>
                 <a
                   href="#approche"
-                  className="w-full rounded-full border border-ink/20 bg-transparent px-7 py-3.5 text-center text-[16px] font-semibold text-ink transition-colors duration-200 hover:border-ink/40 sm:w-auto"
+                  className="w-full rounded-full border border-ink/15 bg-paper/60 px-7 py-3.5 text-center text-[16px] font-semibold text-ink backdrop-blur transition-colors duration-200 hover:border-ink/30 sm:w-auto"
                 >
                   Comment je travaille
                 </a>
@@ -172,7 +197,9 @@ export default function Hero() {
           </div>
 
           <Reveal delay={200} from="right" className="hidden lg:block">
-            <HeroMockup />
+            <motion.div style={{ y: mockupY, rotate: mockupRotate }}>
+              <HeroMockup />
+            </motion.div>
           </Reveal>
         </div>
       </div>
