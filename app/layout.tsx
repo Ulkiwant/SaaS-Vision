@@ -58,6 +58,9 @@ export const metadata: Metadata = {
       "La puissance d'un logiciel sur mesure, sans la complexité ni le prix d'une agence.",
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "eEaFhtj9-sJlFvPwn38_9P7J2snTgvAbw-xm-2rNOcA",
+  },
 };
 
 const jsonLd = {
